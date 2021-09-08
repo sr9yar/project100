@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Exchange Rate Test
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Exchange Rate Test</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div class="title">Select the currencies</div>
+
+    <form [formGroup]="form">
+      <div class="select-wrapper">
+        <div class="select">
+          <select formControlName="from" name="from">
+            <option *ngFor="let option of fromOptions" [value]="option">{{ option}}</option>
+          </select>
+        </div>
+        <div class="select">
+          <select formControlName="to" name="to">
+            <option *ngFor="let option of toOptions" [value]="option">{{ option}}</option>
+          </select>
+        </div>
+        <div class="select">
+          <input formControlName="amount" type="number" name="amount" />
+        </div>
+      </div>
+    </form>
+
+    <div class="result-wrapper">
+      <div class="result">
+          {{ result }}
+      </div>
+    </div>
+  </div>
+</ion-content>

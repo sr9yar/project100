@@ -1,5 +1,10 @@
 # project100
 
+
+For video demonstration see **demo.mp4** at the root of the repo.
+
+
+
 ## Backend
 
 Runs on port 3000
@@ -13,7 +18,7 @@ npm run start
 
 ## Frontend
 
-Runs on port 4200
+Runs on port 8100
 
 ```
 cd frontend
