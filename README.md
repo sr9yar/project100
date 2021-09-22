@@ -3,6 +3,7 @@
 
 For video demonstration see **demo.mp4** at the root of the repo.
 
+![demo](demo.gif)
 
 
 ## Backend
